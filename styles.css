@@ -762,3 +762,95 @@ footer {
     .load-more button:hover {
       background: #f4f4f4;
     }
+
+    /* ===== Collections Page ===== */
+.collections-banner {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.collections-intro {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 750px;
+}
+.collections-intro h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.collections-intro p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Brand Grid */
+.brand-collection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 60px auto 100px auto;
+  width: 80%;
+}
+
+.brand-box {
+  text-align: center;
+  width: 350px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.brand-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+.brand-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.brand-logo {
+  width: 160px;
+  height: auto;
+  margin-top: 15px;
+}
+.brand-name {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ===== Casio Page ===== */
+.casio-banner {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.casio-text {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+}
+.casio-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.casio-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
