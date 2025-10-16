@@ -1,0 +1,239 @@
+/* ===== General ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #222;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+background-color: white;
+font-family: 'Inter', sans-serif;
+font-size: 15.37px;
+}
+.nav-left ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.nav-left a, .nav-right a {
+  text-decoration: none;
+  color: #333;
+}
+.logo {
+text-align: center;
+}
+
+.logo img {
+width: 60px;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  background: url('https://via.placeholder.com/1440x600') no-repeat center center/cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  border: 1px solid #fff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+//* ===== Story ===== */
+.story {
+  position: relative;
+  background: url('https://i.imgur.com/kTj7ptn.png') no-repeat center center/cover;
+  padding: 8rem 10%;
+  color: #fff;
+  text-align: left;
+}
+
+.story::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* light overlay for readability */
+}
+  
+.story-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.story h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.story p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+/* ===== Series ===== */
+.series {
+  text-align: center;
+  padding: 4rem 8%;
+  background: #f9f9f9;
+}
+.series h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.series-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.series-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+.series-item:hover {
+  transform: translateY(-5px);
+}
+.series-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.series-item h4 {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* ===== Newsletter ===== */
+.newsletter {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #111;
+  color: #fff;
+}
+.newsletter p {
+  margin-bottom: 1rem;
+}
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.newsletter-form input {
+  padding: 0.7rem;
+  width: 250px;
+  border: none;
+  border-radius: 3px;
+}
+.newsletter-form button {
+  padding: 0.7rem 1.2rem;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.newsletter-form button:hover {
+  background: #ddd;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #000;
+  color: #ccc;
+  padding: 2rem 8%;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.footer-links h5 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer-copy {
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .story {
+    flex-direction: column;
+  }
+  .series-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
