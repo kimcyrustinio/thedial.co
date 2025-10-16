@@ -236,7 +236,7 @@ body {
   flex-wrap: wrap;
 }
 .series-item {
-  background: #f9f9f9;
+  background: #fefefe;
   border-radius: 14px;
   padding: 1.4rem;
   width: 300px;
@@ -651,3 +651,114 @@ footer {
   }
 }
 
+/* ----- Casio Page Styling ----- */
+    .collection-banner {
+      width: 100%;
+      height: 320px; /* reduce from auto to fixed height */
+      object-fit: cover; /* makes image scale nicely */
+
+    }
+
+    .collection-text {
+      text-align: center;
+      margin: 40px auto;
+      max-width: 700px;
+    }
+
+    .collection-text h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .collection-text p {
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .watch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+      width: 70%;
+      margin: 60px auto 0 auto; /* increased top margin */
+      padding: 40px 0;
+    }
+
+    .watch-card {
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      transition: all 0.3s ease;
+      background-color: #f0f0f0;
+    }
+
+    .watch-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .watch-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      margin-top: 50px;
+    }
+
+    .watch-name {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 14.33px;
+      color: #000;
+      margin-bottom: 25px;
+      margin-top: 100px;
+    }
+
+    .watch-price {
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 12.88px;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    .wishlist-btn {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 18px;
+      color: #999;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .wishlist-btn.active {
+      color: red;
+    }
+
+    .load-more {
+      text-align: center;
+      margin: 20px 0 80px 0;
+    }
+
+    .load-more button {
+      font-family: "Inter", sans-serif;
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 10px 28px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .load-more button:hover {
+      background: #f4f4f4;
+    }
