@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inter", sans-serif;
   color: #222;
@@ -30,6 +31,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .nav-left ul {
   display: flex;
   gap: 1.5rem;
@@ -37,9 +39,11 @@ body {
   align-items: center;
   height: 100%;
 }
+
 .nav-left ul li {
   position: relative;
 }
+
 .nav-left a {
   text-decoration: none;
   color: #333;
@@ -53,12 +57,14 @@ body {
 .dropdown {
   position: relative;
 }
-.dropdown > a {
+
+.dropdown>a {
   display: inline-flex;
   align-items: center;
   height: 100%;
   padding: 0.6rem 0;
 }
+
 .dropdown-menu {
   opacity: 0;
   visibility: hidden;
@@ -76,14 +82,17 @@ body {
   transition: all 0.2s ease-in-out;
   z-index: 999;
 }
-.dropdown:hover > .dropdown-menu {
+
+.dropdown:hover>.dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
+
 .dropdown-menu li {
   width: 100%;
 }
+
 .dropdown-menu li a {
   display: block;
   padding: 10px 20px;
@@ -92,6 +101,7 @@ body {
   transition: background 0.2s ease;
   white-space: nowrap;
 }
+
 .dropdown-menu li a:hover {
   background-color: #f5f5f5;
 }
@@ -103,6 +113,7 @@ body {
   align-items: center;
   height: 100%;
 }
+
 .logo img {
   width: 60px;
   height: auto;
@@ -119,6 +130,7 @@ body {
   gap: 1.5rem;
   height: 100%;
 }
+
 .nav-right a {
   text-decoration: none;
   color: #333;
@@ -139,26 +151,31 @@ body {
   color: white;
   text-align: center;
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .hero-content {
   position: relative;
   z-index: 1;
   max-width: 700px;
   padding: 0 1rem;
 }
+
 .hero h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
 .hero p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
+
 .btn {
   border: 1px solid #fff;
   color: white;
@@ -166,6 +183,7 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
+
 .btn:hover {
   background: #fff;
   color: #000;
@@ -179,6 +197,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .story-container {
   display: flex;
   width: 100%;
@@ -188,27 +207,32 @@ body {
   padding: 80px 60px;
   gap: 60px;
 }
+
 .story-content {
   flex: 1;
   max-width: 550px;
 }
+
 .story-content h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.8rem;
   color: #222;
   margin-bottom: 1rem;
 }
+
 .story-content p {
   font-size: 1.05rem;
   color: #555;
   line-height: 1.7;
 }
+
 .story-image {
   flex: 1;
   display: flex;
   justify-content: right;
   align-items: right;
 }
+
 .story-image img {
   width: 100%;
   max-width: 520px;
@@ -223,11 +247,13 @@ body {
   padding: 4rem 8%;
   background: #f9f9f9;
 }
+
 .series h2 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
 .series-grid {
   display: flex;
   justify-content: center;
@@ -235,6 +261,7 @@ body {
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+
 .series-item {
   background: #fefefe;
   border-radius: 14px;
@@ -249,21 +276,25 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .series-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
 .series-item img {
   width: 100%;
   height: 240px;
   object-fit: contain;
   margin-bottom: 1rem;
 }
+
 .series-item h4 {
   margin-top: auto;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
+
 .series-item p {
   margin: 0;
   font-size: 0.95rem;
@@ -279,6 +310,7 @@ body {
   padding: 3rem 8%;
   flex-wrap: wrap;
 }
+
 .brand-item {
   display: flex;
   flex-direction: column;
@@ -286,27 +318,32 @@ body {
   text-align: center;
   width: 350px;
 }
-.brand-item > a > img {
+
+.brand-item>a>img {
   width: 100%;
   height: auto;
   max-width: 350px;
   border-radius: 5px;
   transition: transform 0.3s ease;
 }
-.brand-item > a > img:hover {
+
+.brand-item>a>img:hover {
   transform: scale(1.03);
 }
+
 .brand-item h3 {
   margin-top: 1rem;
   font-size: 1.5rem;
   letter-spacing: 2px;
 }
+
 .brand-logo {
   display: block;
   width: 160px;
   height: auto;
   margin-top: 1rem;
 }
+
 #casio-img {
   width: 280px;
   height: auto;
@@ -334,17 +371,20 @@ footer {
   flex: 1.5;
   min-width: 280px;
 }
+
 .newsletter p {
   margin-bottom: 1rem;
   font-size: 0.95rem;
   color: #bbb;
   line-height: 1.6;
 }
+
 .footer-form {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
 .footer-form input {
   padding: 0.8rem;
   width: 220px;
@@ -354,9 +394,11 @@ footer {
   color: #ccc;
   font-size: 0.9rem;
 }
+
 .footer-form input::placeholder {
   color: #666;
 }
+
 .footer-form button {
   padding: 0.8rem 1.2rem;
   background: #fff;
@@ -368,6 +410,7 @@ footer {
   border-radius: 2px;
   transition: background 0.3s ease;
 }
+
 .footer-form button:hover {
   background: #ddd;
 }
@@ -387,16 +430,19 @@ footer {
   min-width: 280px;
   gap: 3rem;
 }
+
 .footer-links h5 {
   color: #fff;
   font-size: 0.85rem;
   letter-spacing: 1px;
   margin-bottom: 0.8rem;
 }
+
 .footer-links ul {
   list-style: none;
   padding: 0;
 }
+
 .footer-links a {
   color: #ccc;
   text-decoration: none;
@@ -404,6 +450,7 @@ footer {
   display: block;
   margin-bottom: 0.4rem;
 }
+
 .footer-links a:hover {
   text-decoration: underline;
 }
@@ -423,10 +470,12 @@ footer {
   .story-container {
     height: 520px;
   }
+
   .story-content {
     padding: 60px 6%;
     width: 55%;
   }
+
   .story-image {
     width: 45%;
   }
@@ -438,9 +487,11 @@ footer {
     text-align: center;
     padding: 60px 30px;
   }
+
   .story-content {
     max-width: 100%;
   }
+
   .story-image img {
     max-width: 420px;
   }
@@ -451,27 +502,33 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   .story-container {
     flex-direction: column-reverse;
     height: auto;
   }
+
   .story-content {
     width: 100%;
     padding: 40px 5%;
     text-align: center;
   }
+
   .story-image {
     width: 100%;
     height: 320px;
   }
+
   .series-grid {
     flex-direction: column;
     align-items: center;
   }
+
   .brand-section {
     flex-direction: column;
     align-items: center;
   }
+
   .brand-item {
     width: 100%;
     max-width: 380px;
@@ -491,7 +548,7 @@ footer {
   background: #fff;
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .cart-container h1 {
@@ -633,8 +690,8 @@ footer {
   }
 
   .navbar a {
-  font-weight: 500;
-}
+    font-weight: 500;
+  }
 
   .nav-left ul {
     flex-direction: column;
@@ -652,118 +709,121 @@ footer {
 }
 
 /* ----- Casio Page Styling ----- */
-    .collection-banner {
-      width: 100%;
-      height: 320px; /* reduce from auto to fixed height */
-      object-fit: cover; /* makes image scale nicely */
+.collection-banner {
+  width: 100%;
+  height: 320px;
+  /* reduce from auto to fixed height */
+  object-fit: cover;
+  /* makes image scale nicely */
 
-    }
+}
 
-    .collection-text {
-      text-align: center;
-      margin: 40px auto;
-      max-width: 700px;
-    }
+.collection-text {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+}
 
-    .collection-text h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #000;
-    }
+.collection-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
 
-    .collection-text p {
-      font-family: "Inter", sans-serif;
-      font-size: 15px;
-      color: #444;
-      line-height: 1.6;
-    }
+.collection-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
 
-    .watch-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 30px;
-      width: 70%;
-      margin: 60px auto 0 auto; /* increased top margin */
-      padding: 40px 0;
-    }
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  width: 70%;
+  margin: 60px auto 0 auto;
+  /* increased top margin */
+  padding: 40px 0;
+}
 
-    .watch-card {
-      border: 1px solid #f0f0f0;
-      border-radius: 8px;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      transition: all 0.3s ease;
-      background-color: #f0f0f0;
-    }
+.watch-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: #f0f0f0;
+}
 
-    .watch-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
+.watch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
 
-    .watch-card img {
-      width: 100%;
-      height: 350px;
-      object-fit: contain;
-      margin-bottom: 15px;
-      margin-top: 50px;
-    }
+.watch-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
 
-    .watch-name {
-      font-family: "Inter", sans-serif;
-      font-weight: 600;
-      font-size: 14.33px;
-      color: #000;
-      margin-bottom: 25px;
-      margin-top: 100px;
-    }
+.watch-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14.33px;
+  color: #000;
+  margin-bottom: 25px;
+  margin-top: 100px;
+}
 
-    .watch-price {
-      font-family: "Inter", sans-serif;
-      font-weight: 500;
-      font-size: 12.88px;
-      color: #333;
-      margin-bottom: 25px;
-    }
+.watch-price {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12.88px;
+  color: #333;
+  margin-bottom: 25px;
+}
 
-    .wishlist-btn {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      font-size: 18px;
-      color: #999;
-      background: none;
-      border: none;
-      cursor: pointer;
-      transition: color 0.2s ease;
-    }
+.wishlist-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 18px;
+  color: #999;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
 
-    .wishlist-btn.active {
-      color: red;
-    }
+.wishlist-btn.active {
+  color: red;
+}
 
-    .load-more {
-      text-align: center;
-      margin: 20px 0 80px 0;
-    }
+.load-more {
+  text-align: center;
+  margin: 20px 0 80px 0;
+}
 
-    .load-more button {
-      font-family: "Inter", sans-serif;
-      border: 1px solid #ccc;
-      background: #fff;
-      padding: 10px 28px;
-      font-size: 14px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+.load-more button {
+  font-family: "Inter", sans-serif;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-    .load-more button:hover {
-      background: #f4f4f4;
-    }
+.load-more button:hover {
+  background: #f4f4f4;
+}
 
-    /* ===== Collections Page ===== */
+/* ===== Collections Page ===== */
 .collections-banner {
   width: 100%;
   height: 320px;
@@ -775,12 +835,14 @@ footer {
   margin: 40px auto;
   max-width: 750px;
 }
+
 .collections-intro h2 {
   font-family: "Playfair Display", serif;
   font-size: 30px;
   color: #000;
   margin-bottom: 10px;
 }
+
 .collections-intro p {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -807,25 +869,115 @@ footer {
   border-radius: 8px;
   transition: all 0.3s ease;
 }
+
 .brand-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
+
 .brand-box img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
+
 .brand-logo {
   width: 160px;
   height: auto;
   margin-top: 15px;
 }
+
 .brand-name {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 10px;
+}
+
+/* =====================================
+   COLLECTIONS PAGE (SCOPED STYLES)
+   ===================================== */
+
+.collections-page .collections-featured {
+  text-align: center;
+  width: 85%;
+  margin: 100px auto;
+}
+
+.collections-page .collections-featured h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+/* Product grid */
+.collections-page .collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Product cards */
+.collections-page .collections-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collections-page .collections-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.collections-page .collections-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.collections-page .collections-card p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.collections-page .collections-card span {
+  font-family: "Inter", sans-serif;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* SALE / SOLD OUT tags */
+.collections-page .collections-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #000;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.collections-page .collections-card.sale .collections-tag {
+  background: #47b96d;
+  /* Green tag for sale */
+}
+
+.collections-page .collections-card.sold-out .collections-tag {
+  background: #444;
+  /* Gray tag for sold out */
 }
 
 /* ===== Casio Page ===== */
@@ -840,17 +992,17 @@ footer {
   margin: 40px auto;
   max-width: 700px;
 }
+
 .casio-text h2 {
   font-family: "Playfair Display", serif;
   font-size: 28px;
   color: #000;
   margin-bottom: 10px;
 }
+
 .casio-text p {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #444;
   line-height: 1.6;
 }
-
-
