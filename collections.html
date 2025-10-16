@@ -1,113 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collections | The Dial Co.</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<header class="navbar">
-  <div class="nav-left">
-    <ul>
-      <li><a href="landing.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#">Pages ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="landing.html">About Us</a></li>
-          <li><a href="landing.html">Our Story</a></li>
-          <li><a href="landing.html">Contact</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="collections.html">Shop ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="seiko.html">Seiko</a></li>
-          <li><a href="casio.html">Casio</a></li>
-        </ul>
-      </li>
-      <li><a href="#">News ▾</a></li>
-    </ul>
-  </div>
+  <div class="collections-page">
+    <!-- Banner -->
+    <section>
+      <img src="https://i.imgur.com/cbKRl6y.png" alt="Collections Banner" class="collections-banner">
+    </section>
 
-  <div class="logo">
-    <a href="landing.html">
-      <img src="https://i.imgur.com/nCHzMo7.png" alt="The Dial Co. Logo">
-    </a>
-  </div>
+    <!-- Intro Text -->
+    <section class="collections-intro">
+      <h2>Explore Our Collections</h2>
+      <p>Discover a curated selection of timeless pieces from the world’s leading brands.
+        Whether you prefer modern designs or classic craftsmanship, The Dial Co. offers collections that match every
+        style and story.</p>
+    </section>
 
-  <div class="nav-right">
-    <a href="#">Account</a>
-    <a href="#">♡ Wishlist</a>
-    <a href="cart.html">🛒 Cart (0)</a>
-  </div>
-</header>
-
-<!-- Banner -->
-<section>
-  <img src="https://i.imgur.com/cbKRl6y.png" alt="Collections Banner" class="collections-banner">
-</section>
-
-<!-- Intro Text -->
-<section class="collections-intro">
-  <h2>Explore Our Collections</h2>
-  <p>Discover a curated selection of timeless pieces from the world’s leading brands. 
-  Whether you prefer modern designs or classic craftsmanship, The Dial Co. offers collections that match every style and story.</p>
-</section>
-
-<!-- Brand Grid -->
-<section class="brand-collection">
-  <div class="brand-box">
-    <a href="seiko.html"><img src="https://i.imgur.com/0GS5sDt.png" alt="Seiko Watches"></a>
-    <img src="https://i.imgur.com/szHVg2x.png" alt="Seiko Logo" class="brand-logo">
-    <h3 class="brand-name">SEIKO</h3>
-  </div>
-
-  <div class="brand-box">
-    <a href="casio.html"><img src="https://i.imgur.com/WnohjoV.png" alt="Casio Watches"></a>
-    <img src="https://i.imgur.com/gogTG8o.png" alt="Casio Logo" class="brand-logo">
-    <h3 class="brand-name">CASIO</h3>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="footer-container">
-    <div class="newsletter">
-      <p>Subscribe to our newsletter and get exclusive offers, updates, and alerts on amazing sales.</p>
-      <form class="footer-form">
-        <input type="email" placeholder="Email address" required>
-        <button type="submit">SUBSCRIBE</button>
-      </form>
-    </div>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-links">
-      <div>
-        <h5>LINKS</h5>
-        <ul>
-          <li><a href="landing.html">Home</a></li>
-          <li><a href="collections.html">Collections</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
+    <!-- Brand Grid -->
+    <section class="brand-collection">
+      <div class="brand-box">
+        <a href="seiko.html"><img src="https://i.imgur.com/0GS5sDt.png" alt="Seiko Watches"></a>
+        <img src="https://i.imgur.com/szHVg2x.png" alt="Seiko Logo" class="brand-logo">
+        <h3 class="brand-name">SEIKO</h3>
       </div>
-      <div>
-        <h5>SOCIALS</h5>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
+
+      <div class="brand-box">
+        <a href="casio.html"><img src="https://i.imgur.com/WnohjoV.png" alt="Casio Watches"></a>
+        <img src="https://i.imgur.com/gogTG8o.png" alt="Casio Logo" class="brand-logo">
+        <h3 class="brand-name">CASIO</h3>
+      </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="collections-featured">
+      <h2>Best Sellers</h2>
+      <div class="collections-grid">
+        <div class="collections-card sold-out">
+          <img src="https://i.imgur.com/BIyPYKM.png" alt="CASIO MTP 1302D 2AVEF">
+          <div class="collections-tag">SOLD OUT</div>
+          <p>CASIO MTP 1302D 2AVEF</p>
+          <span>₱ 2,990.00</span>
+        </div>
+
+        <div class="collections-card sale">
+          <img src="https://i.imgur.com/MOTze2j.png" alt="CASIO MTP 1370D 7A3V">
+          <div class="collections-tag">SALE</div>
+          <p>CASIO MTP 1370D 7A3V</p>
+          <span>₱ 2,890.00</span>
+        </div>
+
+        <div class="collections-card sale">
+          <img src="https://i.imgur.com/e58Pjba.png" alt="CASIO MTP 1375D 1A">
+          <div class="collections-tag">SALE</div>
+          <p>CASIO MTP 1375D 1A</p>
+          <span>₱ 3,590.00</span>
+        </div>
+
+        <div class="collections-card sale">
+          <img src="https://i.imgur.com/cz7Wbiu.png" alt="SEIKO 5 SKELETON STYLE">
+          <div class="collections-tag">SALE</div>
+          <p>SEIKO 5 SKELETON STYLE</p>
+          <span>₱ 16,000.00</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limited Edition -->
+    <section class="collections-featured">
+      <h2>Limited Edition</h2>
+      <div class="collections-grid">
+        <div class="collections-card sold-out">
+          <img src="https://i.imgur.com/PTHBtCh.png" alt="SEIKO SARB033">
+          <div class="collections-tag">SOLD OUT</div>
+          <p>SEIKO SARB033</p>
+          <span>₱ 42,590.00</span>
+        </div>
+
+        <div class="collections-card">
+          <img src="https://i.imgur.com/1APazFt.png" alt="CASIO LTP 1335D 2AV">
+          <p>CASIO LTP 1335D 2AV</p>
+          <span>₱ 2,390.00</span>
+        </div>
+
+        <div class="collections-card">
+          <img src="https://i.imgur.com/MaylUIC.png" alt="SEIKO SNXJ90">
+          <p>SEIKO SNXJ90</p>
+          <span>₱ 3,590.00</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="newsletter">
+        <p>Subscribe to our newsletter and get exclusive offers, updates, and alerts on amazing sales.</p>
+        <form class="footer-form">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-links">
+        <div>
+          <h5>LINKS</h5>
+          <ul>
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>SOCIALS</h5>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <p class="footer-copy">© 2025 The Dial Co. All rights reserved.</p>
-</footer>
+    <p class="footer-copy">© 2025 The Dial Co. All rights reserved.</p>
+  </footer>
 
 </body>
+
 </html>
