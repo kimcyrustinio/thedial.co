@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart - The Dial Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Pages ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="landing.html">About Us</a></li>
+            <li><a href="landing.html">Our Story</a></li>
+            <li><a href="landing.html">Contact</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="collections.html">Shop ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="seiko.html">Seiko</a></li>
+            <li><a href="casio.html">Casio</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">News ▾</a></li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <a href="landing.html">
+        <img src="https://i.imgur.com/nCHzMo7.png" alt="The Dial Co. Logo">
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#">Account</a>
+      <a href="#">♡ Wishlist</a>
+      <a href="#">🛒 Cart (0)</a>
+    </div>
+  </header>
+
+  <!-- ===== Cart Section ===== -->
+  <section class="cart-page">
+    <div class="cart-container">
+      <h1>Your Shopping Cart</h1>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Casio MTP-1183A-1A</td>
+            <td>₱2,195</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>₱2,195</td>
+            <td><button class="remove-btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>Seiko SNK809</td>
+            <td>₱6,995</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>₱6,995</td>
+            <td><button class="remove-btn">Remove</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <div class="summary-content">
+          <p>Subtotal: <span>₱9,190</span></p>
+          <p>Shipping: <span>₱150</span></p>
+          <hr>
+          <h3>Total: <span>₱9,340</span></h3>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-container">
+      <div class="newsletter">
+        <p>Join our newsletter for exclusive updates and offers.</p>
+        <form class="footer-form">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-links">
+        <div>
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Follow Us</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      © 2025 The Dial Co. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+</html>
