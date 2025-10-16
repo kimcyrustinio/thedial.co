@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seiko Collection | The Dial Co.</title>
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Pages ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="landing.html">About Us</a></li>
+            <li><a href="landing.html">Our Story</a></li>
+            <li><a href="landing.html">Contact</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="collections.html">Shop ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="seiko.html">Seiko</a></li>
+            <li><a href="casio.html">Casio</a></li>
+          </ul>
+        </li>
+        <li><a href="#">News ▾</a></li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <a href="landing.html">
+        <img src="https://i.imgur.com/nCHzMo7.png" alt="The Dial Co. Logo">
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#">Account</a>
+      <a href="#">♡ Wishlist</a>
+      <a href="cart.html">🛒 Cart (0)</a>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section>
+    <img src="https://i.imgur.com/jcQ2HkU.jpeg" alt="Seiko Collection Banner" class="collection-banner">
+  </section>
+
+  <!-- Collection Text -->
+  <section class="collection-text">
+    <h2>Seiko Collection</h2>
+    <p>
+      Seiko’s iconic craftsmanship meets modern sophistication — a collection that blends precision
+      engineering with timeless elegance. From everyday classics to statement pieces, these watches
+      embody reliability, heritage, and refined style for every occasion.
+    </p>
+  </section>
+
+  <!-- Watch Grid -->
+  <section class="watch-grid">
+
+    <!-- SALE -->
+    <div class="watch-card">
+      <button class="wishlist-btn">♡</button>
+      <img src="https://i.imgur.com/u455cLa.png" alt="Seiko Watch">
+      <div class="watch-name">SEIKO SSC813P1</div>
+      <div class="watch-price">
+        ₱32,000.00</span>
+      </div>
+    </div>
+
+    <div class="watch-card">
+      <button class="wishlist-btn">♡</button>
+      <img src="https://i.imgur.com/eB3qXuK.png" alt="Seiko Watch">
+      <div class="watch-name">SEIKO SWR054</div>
+      <div class="watch-price">₱14,490.00</div>
+    </div>
+
+    <div class="watch-card sold-out">
+      <button class="wishlist-btn">♡</button>
+      <img src="https://i.imgur.com/8UCexoz.png" alt="Seiko Watch">
+      <div class="watch-name">SEIKO SARB033</div>
+      <div class="watch-price">₱42,590.00</div>
+    </div>
+
+    <div class="watch-card">
+      <button class="wishlist-btn">♡</button>
+      <img src="https://i.imgur.com/nK3GzaV.png" alt="Seiko Watch">
+      <div class="watch-name">SEIKO SNXS77</div>
+      <div class="watch-price">₱7,990.00</div>
+    </div>
+
+
+    <div class="watch-card">
+      <button class="wishlist-btn">♡</button>
+      <img src="https://i.imgur.com/bSBbDM9.png" alt="Seiko Watch">
+      <div class="watch-name">SEIKO 5 SKELETON STYLE</div>
+      <div class="watch-price">
+        ₱16,000.00</span>
+      </div>
+    </div>
+
+    <div class="watch-card">
+      <button class="wishlist-btn">♡</button>
+      <img src="https://i.imgur.com/YKFjAQq.png" alt="Seiko Watch">
+      <div class="watch-name">SEIKO SNXJ90</div>
+      <div class="watch-price">₱3,590.00</div>
+    </div>
+
+  </section>
+
+  <!-- Load More -->
+  <div class="load-more">
+    <button>LOAD MORE</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="newsletter">
+        <p>Subscribe to our newsletter and get exclusive offers, updates, and alerts on amazing sales.</p>
+        <form>
+          <input type="email" placeholder="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.wishlist-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
