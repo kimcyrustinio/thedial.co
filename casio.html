@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casio Collection | The Dial Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-left">
+    <ul>
+      <li><a href="landing.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Pages ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="landing.html">About Us</a></li>
+          <li><a href="landing.html">Our Story</a></li>
+          <li><a href="landing.html">Contact</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="collections.html">Shop ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="seiko.html">Seiko</a></li>
+          <li><a href="casio.html">Casio</a></li>
+        </ul>
+      </li>
+      <li><a href="#">News ▾</a></li>
+    </ul>
+  </div>
+
+  <div class="logo">
+    <a href="landing.html">
+      <img src="https://i.imgur.com/nCHzMo7.png" alt="The Dial Co. Logo">
+    </a>
+  </div>
+
+  <div class="nav-right">
+    <a href="#">Account</a>
+    <a href="#">♡ Wishlist</a>
+    <a href="cart.html">🛒 Cart (0)</a>
+  </div>
+</header>
+
+<!-- Banner -->
+<section>
+  <img src="https://i.imgur.com/mNg8eff.png" alt="Casio Banner" class="casio-banner">
+</section>
+
+<!-- Intro Text -->
+<section class="casio-text">
+  <h2>Casio Collection</h2>
+  <p>Casio brings dependable engineering, versatility, and style to every wrist. 
+  Explore a collection that balances rugged durability with sleek aesthetics — the perfect companion for everyday wear.</p>
+</section>
+
+<!-- Watch Grid -->
+<section class="watch-grid">
+  <div class="watch-card">
+    <button class="wishlist-btn">♡</button>
+    <img src="https://i.imgur.com/BIyPYKM.png" alt="Casio MTP 1302D 2AVEF">
+    <div class="watch-name">CASIO MTP 1302D 2AVEF</div>
+    <div class="watch-price">₱3,500.00</div>
+  </div>
+
+  <div class="watch-card">
+    <button class="wishlist-btn">♡</button>
+    <img src="https://i.imgur.com/MOTze2j.png" alt="CASIO MTP 1370D 7A3V">
+    <div class="watch-name">CASIO MTP 1370D 7A3V</div>
+    <div class="watch-price">₱3,700.00</div>
+  </div>
+
+  <div class="watch-card">
+    <button class="wishlist-btn">♡</button>
+    <img src="https://i.imgur.com/e58Pjba.png" alt="CASIO MTP 1375D 1A">
+    <div class="watch-name">CASIO MTP 1375D 1A</div>
+    <div class="watch-price">₱4,200.00</div>
+  </div>
+
+  <div class="watch-card">
+    <button class="wishlist-btn">♡</button>
+    <img src="https://i.imgur.com/1APazFt.png" alt="CASIO LTP 1335D 2AV">
+    <div class="watch-name">CASIO LTP 1335D 2AV</div>
+    <div class="watch-price">₱3,000.00</div>
+  </div>
+
+  <div class="watch-card">
+    <button class="wishlist-btn">♡</button>
+    <img src="https://i.imgur.com/baOHo7b.png" alt="CASIO LTP V007L 7B1">
+    <div class="watch-name">CASIO LTP V007L 7B1</div>
+    <div class="watch-price">₱2,850.00</div>
+  </div>
+
+  <div class="watch-card">
+    <button class="wishlist-btn">♡</button>
+    <img src="https://i.imgur.com/7nMZjA6.png" alt="CASIO MTP 1302D 1A1VDF">
+    <div class="watch-name">CASIO MTP 1302D 1A1VDF</div>
+    <div class="watch-price">₱3,550.00</div>
+  </div>
+</section>
+
+<!-- Load More -->
+<div class="load-more">
+  <button>LOAD MORE</button>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="newsletter">
+      <p>Subscribe to our newsletter and get exclusive offers, updates, and alerts on amazing sales.</p>
+      <form class="footer-form">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-links">
+      <div>
+        <h5>LINKS</h5>
+        <ul>
+          <li><a href="landing.html">Home</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>SOCIALS</h5>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="footer-copy">© 2025 The Dial Co. All rights reserved.</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.wishlist-btn').forEach(btn => {
+    btn.addEventListener('click', () => btn.classList.toggle('active'));
+  });
+</script>
+</body>
+</html>
