@@ -14,7 +14,7 @@
   <div class="nav-left">
     <ul>
       <li><a href="landing.html">Home</a></li>
-      <li class="dropdown">
+      <li class="dropdown nav-pages">
         <a href="#">Pages ▾</a>
         <ul class="dropdown-menu">
           <li><a href="landing.html">About Us</a></li>
@@ -29,7 +29,7 @@
           <li><a href="casio.html">Casio</a></li>
         </ul>
       </li>
-      <li><a href="#">News ▾</a></li>
+      <li><a href="#" class="nav-news">News ▾</a></li>
     </ul>
   </div>
 
@@ -41,7 +41,7 @@
 
   <div class="nav-right">
     <a href="#">Account</a>
-    <a href="#">♡ Wishlist</a>
+    <a href="#" class="nav-wishlist">♡ Wishlist</a>
     <a href="cart.html">🛒 Cart (0)</a>
   </div>
 </header>
@@ -142,10 +142,6 @@
   <p class="footer-copy">© 2025 The Dial Co. All rights reserved.</p>
 </footer>
 
-<script>
-  document.querySelectorAll('.wishlist-btn').forEach(btn => {
-    btn.addEventListener('click', () => btn.classList.toggle('active'));
-  });
-</script>
+  <script src="shop.js"></script>
 </body>
 </html>
